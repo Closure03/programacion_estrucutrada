@@ -1,0 +1,947 @@
+Ejercicio 1
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int pg,pp,pe; //partidos ganados: pp; partidos empatados: pe; partidos perdidos:pe; puntos totales: pt//
+    cout<<"ingrese cuantos partidos gano: ";
+    cin>>pg;
+    cout<<"ingrese cuantos partidos perdio: ";
+    cin>>pp;
+    cout<<"ingrese cuantos partidos empato: ";
+    cin>>pe;
+    //se multiplica por los puntos que equivale cada ppartido//
+    
+int pgf=(pg*3);
+    cout << "sus partidos ganados son: "<<pg<< " sus puntos son: "<<pgf<< " felicitaciones. ";
+//se multiplica por los puntos que equivale cada partido//
+
+int ppf=(pp*0);
+    cout << "sus partidos perdidos son: "<<pp<< " y sus puntos son: "<<ppf<< " ouchh. ";
+//se multiplica por los puntos que equivale cada partido//
+int pt=pgf+ppf+pe; 
+
+// se define la variable pt para que almacene cada uno de los datos en forma de suma//
+
+    cout << " sus partidos empatados son "<<pe<< " hay cosas por mejorar.";
+    
+    cout << " sus puntos totales son: "<<pt<< endl ;
+
+   return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------
+Ejercicio 2
+
+#include <iostream>
+#include <iomaip>
+
+using namespace std;
+
+int main()
+{
+    int i,it;//i=valor horas de trabajo--it= horas laboradas totales// 
+  cout<< "-----------------";
+   cout<< "Por favor ingrese las horas que laboro: ";
+   cout<< "----------------";
+   cin>> i; 
+    int (it=i*4166);
+   
+    cout<< "----------";
+   cout<< " su pago sera de: " << it << setw(10) " por haber laborado con nosotros. ";
+   cout<< "----------";
+}
+ return 0;
+ }
+    
+----------------------------------------------------------------------------------------------------------
+Ejercicio 3 
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    float A,B,C,S,Area;
+    cout << "Por favor introduzca los 3 lados de un triangulo para hayar su area";
+        cout << "------------------";
+    cout <<". ingrese Cateto adyacente ";
+    cin>>A;
+        cout << "-------------------";
+    cout<< ". Ingrese Cateto opuesto";
+    cin>> B;
+        cout << "-------------------";
+    cout<< ". Ingrese Hipotenuza ";
+    cin>> C;
+        cout << "-------------------";
+    float (S=A+B+C/2);
+    float sqrt (Area=(S*(S-A)*(S-B)*(S-C)));
+    cout<< "el area del triangulo es: "<<Area<<" y su semiperimetro es: "<<S<<" .";
+    return 0;
+}
+----------------------------------------------------------------------------------------------------------
+Ejercicio 4
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+ int GB,Mb,CD;
+ cout<<"Ingrese la cantidad de Gigabytes para realizar la conversion: ";
+ cin>>  GB;
+ int (Mb=GB*1024);
+ int (CD=Mb/700);
+ cout<<"La cantidad de GB que tiene se pueden contener en: "<<CD<<" Cd's y";
+ cout<<" con una capacidad total en Mg de: "<<Mb<<" Megabytes .";
+}
+ return 0;
+ }
+----------------------------------------------------------------------------------------------------------
+Ejercicio 5
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    int A,B;
+ cout<<"Por favor ingrese la edad de los hermanos";
+ cout<<"Primer hermano: ";
+ cin>>A;
+  cout<<"Segundo hermano: ";
+ cin>>B;
+ if (A>B){
+ cout<<"el primer hermano es mayor que el segundo";
+ }
+ else if (A<B){
+ cout<<"el segundo hermano es mayor que el primero";
+ }
+ else if (A==B){
+     cout<<"ambas edades son iguales";
+ }
+ return 0;
+ }
+----------------------------------------------------------------------------------------------------------------
+Ejercicio 6
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+   int A,B,C;
+   cout<<"ingrese las medidas de los lados en el siguiente orden: ";
+   cout<<"Cateto Adyacente: ";
+   cin>>A;
+   cout<<"Cateto Opuesto: ";
+   cin>>B;
+   cout<<"Hipotenuza: ";
+   cin>>C;
+   
+if (A=B && B=C){
+cout<<"el triangulo es un Triángulo equilátero";
+}
+else if (A==B || A==C) || (B==C){
+    cout<<"el triangulo es un Triángulo isósceles";
+}
+else if (A<>B || B<>C || C<>B) {
+cout<<"el triangulo es un Triángulo escaleno";
+}
+
+ return 0;
+ }
+------------------------------------------------------------------------------------
+Ejercicio #7
+
+include <iostream>
+using namespace std;
+int main(){
+    int N;
+    string Unidad[]={"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
+    string Decena[]={"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
+    cout<<"Ingresa numero entre 1 y 99"<<endl;
+    cin>>N;
+    if(N>=10){
+          int u=N%10;
+          int d= N/10;
+          cout<<Decena[d]<<Unidad[u];
+      }else{
+          cout<<Unidad[N];
+      }
+   return 0;
+}
+
+-----------------------------------------------------------------------------------------
+Ejercicio #8
+
+#include <iostream>  
+
+#include <cmath>  
+
+using namespace std;  
+
+  
+
+  
+
+/*Elabore un algoritmo que permita ingresar el monto de venta alcanzado por un  
+
+vendedor durante un mes, luego de calcular la bonificación que le corresponde sabiendo:  
+
+mva=monto de venta alcanzado  
+
+*/  
+
+  
+
+int main(){   
+
+     
+
+int mva; // Definimos la variable mva = monto de venta alcanzado  
+
+cout << "Introducir el monto de venta alcanzado en el mes: "; // Imprimimos el texto  
+
+cin >> mva; // Le pedimos al usuario que digite el valor del monto de venta alcanzado  
+
+cout << " " << endl;  
+
+  
+
+/* En la primera condicion se plantea que si el numero digitado por el usuario esta  
+
+dentro de este intertvalo (0-1000), su bonificacion seria 0%. Es decir no obtendria  
+
+nada de bonificación. Igualmente mostramos su bonificacion dependiendo del porcentaje del bono.*/  
+
+if (mva>=0 and mva<=1000){  
+
+float bonificacion1 = mva*0.0;  
+
+cout << "Porcentaje de bono (0%): " << bonificacion1;  
+
+cout << " " << endl;  
+
+}  
+
+  
+
+/* En la segunda condicion se plantea que si el numero digitado por el usuario esta  
+
+dentro de este intertvalo (1000-5000), su bonificacion seria 3%. Se toma a partir del  
+
+1001. Igualmente mostramos su bonificacion dependiendo del porcentaje del bono.*/  
+
+  
+
+  
+
+if (mva>1000 and mva<=5000){  
+
+float bonificacion2 = mva*0.03;  
+
+cout << "Porcentaje de bono (3%): " << bonificacion2;  
+
+cout << " " << endl;  
+
+}  
+
+  
+
+/* En la tercera condicion se plantea que si el numero digitado por el usuario esta  
+
+dentro de este intertvalo (5000-20000), su bonificacion seria 5%. Se toma a partir del 5001.  
+
+Igualmente mostramos su bonificacion dependiendo del porcentaje del bono.*/  
+
+  
+
+  
+
+if (mva>5000 and mva<=20000){  
+
+float bonificacion3 = mva*0.05;  
+
+cout << "Porcentaje de bono (5%): " << bonificacion3;  
+
+cout << " " << endl;  
+
+}  
+
+  
+
+/* En la cuarta condicion se plantea que si el numero digitado por el usuario es mayor que  
+
+(20000), su bonificacion seria 8%. Se toma a partir del 20001. Igualmente mostramos su  
+
+bonificacion dependiendo del porcentaje del bono*/  
+
+  
+
+  
+
+else if (mva>20000){  
+
+float bonificacion4 = mva*0.08;  
+
+cout << "Porcentaje de bono (8%): " << bonificacion4;  
+
+cout << " " << endl;  
+
+}  
+
+ 
+
+return 0;  
+
+}
+--------------------------------------------------------------------------------------------------------------
+Ejercicio #9
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int numero;
+    int unidades,decenas;
+    cout<<"ingrese un numero dos digitos";
+    cin>> numero;
+    
+        unidades = numero%10;
+        numero= numero/10;
+        decenas= numero%10;
+        numero= numero/10;
+        
+        cout<<" las decenas son: "<<decenas<<".";
+        cout<<" las Unidades son: "<<unidades<<".";
+
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------------------
+Ejercicio #10
+
+#include <istream>
+#include<conio.h>
+
+using namespace std;
+int main ()
+{
+int i[100][2], filas,columnas;
+
+cout<<"digite el numero de filas: ";
+cin>>filas;
+cout<<"digite el numero de columnas: ";
+cin>>columnas;
+
+//almacenando elementos en la matriz
+
+for(int i=0;i<filas;i++)// se define ciclo for para filas y columnas//
+for(int j=0;j<columnas;j++){
+cout<<"digite un numero: ["<<i<<"]["<<j<<"]: ";//[0][1] posicion//se organizan los numero de a cuerdo a la fila y columna// 
+cin>>numeros[i][j];
+}
+}
+//mostrando la matriz
+for(int i=0;i<filas;i++)
+for(int j=0;j<columnas;j++){
+cout<<numeros[i][j];
+}
+cout<<"\n";
+}
+return 0;
+
+}            
+
+-------------------------------------------------------------------------------------------
+Ejercicio #11
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+intmain()
+{
+intA,B,C,max,min;
+//se definen variables//
+cout<<"ingrese tres numeros: ";
+cin>>A,B,C;
+if(A!=B&&A!=C&&B!=C)
+//se aplica la condicional para diferenciar
+{
+if(A>B)
+{
+else if (A>C)
+{
+max=A;
+}
+else if
+{
+max=C;
+}
+}
+else if
+{
+if(B>C)
+{
+max=B;
+}
+else if
+{
+max=C;
+}
+}
+if(A<B)
+{
+if(A<C)
+{
+min=A;
+}
+else if
+{
+min=C;
+}
+}
+else if
+{
+if(B<C)
+{
+min=B;
+}
+else if
+{
+min=C;
+}
+}
+cout<<"elmayordelosnumeroes:"<<max<<" y el menores:"<<min;
+}
+else if
+{
+cout<<"los numeros no son validos: ";
+}
+return 0;
+}
+---------------------------------------------------------------------------------------
+Ejercicio 12
+
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+intmain()
+{
+intcateto1,cateto2,hipo,tenusa;
+//declaracion de variables
+cout<<"ingrese los dos catetos del triangulo: ";
+cin>>cateto1;
+cin>>cateto2;
+//entradas de datos
+
+hipo= pow(cateto1,2)+pow(cateto2,2);
+tenusa=sqrt(hipo);
+
+//operacion de tipo potencia
+cout<<"la hipotenusa del triangulo es: "<<tenusa;
+//resultados
+return 0;
+}
+-----------------------------------------------------------------------------------------
+Ejercicio 13
+
+#include<iostream>
+#include<stdlib.h>
+#include<math.h>
+
+using namespace std;
+intmain()
+
+{
+
+floatprecio1,precio2,total,entrada,salida,duracion;
+// declaracion de variables
+cout<<"Ingrese su hora de entrada: ";//ingreso de datos
+
+cin>>entrada;// se asigna informacion a variable
+cout<<"Ingrese su hora de salida:";//ingreso de dato a variable
+cin>>salida;//ingreso de datos a variable
+duracion=salida-entrada;
+precio1=5000;//se definen los precios 
+precio2=3000;
+total=precio1+((precio2*duracion)-precio2);//se realiza la operacion
+
+if(duracion==1){
+cout<<"Subtotal a pagar es:5000";
+}
+if(duracion>1){
+cout<<"Subtotal a pagar es de:"<<total<<endl;
+}
+return 0;
+}
+-------------------------------------------------------------------------------------------
+Ejercicio 14
+
+#include<iostream>
+#include<math.h>
+#include<stdlib.h>
+using namespace std;
+
+intmain()
+{
+float vK,vM;//se establecen variables 
+cout<<"ingrese la velocidad en Km / h: ";// instrucciones para el usuario
+cin>>vK;//lectura de variable
+vM=(vK*1000)/3600;// se plantea ecuacion /mam/s
+
+cout<<"la velocidad es iguala "<<vM<<"m/s"; //impresion de resultado
+return 0;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ------------------------------------------------------------------------------------------
+Ejercicio 15
+
+#include<iostream>
+#include<math.h>
+#include<stdlib.h>
+using namespace std;
+intmain()
+{
+floatn1,n2,select,seleccionop;//declaracion variables 
+cout<<"ingreselosdosnumeros";
+cin>>n1;//Lectura
+cin>>n2;
+cout<<"para seleccionar la operacion aritmetica ingrese suma=1,resta=2,
+mutiplicacion = 3,division = 4";//opciones de operacion
+cin>>select;
+if(select==1)//declaracion de condiciones
+{
+seleccionop=n1+n2;
+cout<<"el resultado es:"<<seleccionop;
+}
+elseif(select==2)//condicional resta
+{
+seleccionop=n1-n2;
+cout<<"el resultado es:"<<seleccionop;
+}
+elseif(select==3)//condicional multiplicacion
+{
+seleccionop=n1*n2;
+cout<<"el resultado es:"<<seleccionop;
+}
+elseif(select==4)//condicional division 
+{
+seleccionop=n1/n2;
+cout<<"el resultado es:"<<seleccionop;
+}
+else
+{
+cout<<"numero no valido";//valor de error para refresar a la operacion
+}
+return 0;
+}
+----------------------------------------------------------------------------------\
+Ejercicios 16
+
+#include<iostream>
+using namespace std;
+intmain()
+{
+float mes,dia;// definicion de variables
+cout<<"introduzca el numero del mes: ";
+cin>>mes;//lectura de variables
+cout<<"indroduzca el numero del dia";//instruccion
+cin>>dia;//lectura de variable
+if(mes==2)//condicion de suma
+{
+cout<<"el mes es valido";// se validan datos
+if(dia<=28&&dia>=1)
+{
+cout<<"eldiaesvalido";// se validan datos
+}
+else
+{
+cout<<"el dia es no valido";//se indican datos invalidos
+}
+}
+else if(mes==1||mes==3||mes==5||mes==7||mes==8||mes==10||
+mes==12)
+{
+cout<<"el mes es valido";//impresion del validacion
+if(dia<=31&&dia>=1)
+{
+cout<<"el dia es valido";// validacion de informacion
+}
+else
+{
+cout<<"el dia no es valido";//invalidacion de informacion
+}
+}
+elseif(mes==4||mes==6||mes==9||mes==11)
+{
+cout<<"el mes es valido";//validacion de datos
+if(dia<=30&&dia>=1)
+{
+cout<<"eldiaesvalido";// validacion de datos
+}
+else
+{
+cout<<"eldiaesnovalido";// validacion de datos
+}
+}
+else
+{
+cout<<"el mes no es valido";//validacion de datos
+cout<<"eldiaesnovalido";//validacion de datos
+}
+return 0;
+}
+-------------------------------------------------------------------------------------------
+Ejercicio 17
+
+#include<stdio.h>
+#include<math.h>
+#include<iostream>
+using namespace std;
+intmain()
+{
+cout<<"Calcular el factorial de un numero \n";
+cout<<"ingreseunnumero:\n";//instruccion 
+int num; //definicion de varibale
+cin>>num; //lectura o registro de variable
+long fact=1; //definicion de variable 
+for(int i=1;i<=num;i++) //declaracion de ciclo
+{
+fact=fact*i; //Calcular el factorial
+}
+cout<<"el factoriales= "<<fact;//dato final
+return 0;
+}
+------------------------------------------------------------------------------------------
+Ejercicio 18
+
+#include<iostream>
+using namespace std;
+intmain()
+{
+int ci=0,ci2=0,pri=0,npri=0;//definicion de variables
+cout<<"los números primos de 2 a 100 son: "<<endl;
+for(ci=1;ci<=100;ci++)//se usa el ciclo for para que se repita 100 veces
+{
+for(ci2=1;ci2<=ci;ci2++)//usamos ciclo for para identificar los numeros primos
+{
+pri=ci%ci2;//identifica si el numero solo se puede dividir en si mismo para
+que de entero
+if(pri==0)//si el primer paso da 0 agregamos un numero primo para seguir con el
+proximo numero,se va sumando de a uno
+{
+npri++;
+}
+}
+if(npri==2)//si en el segundo paso es sumando con el ciclo de primos cumpliendo las dos condiciones
+{
+cout<<""<<ci<<endl;
+}
+npri=0;
+}
+return 0;
+}      
+------------------------------------------------------------------------------------------
+Ejercicio 19
+
+#include<stdio.h>
+#include<math.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+int n,s;//definicion de variables
+cout<<"suma de numeros impares hasta n"<<endl;
+cout<<"ingrese un numero: ";//instrucciones
+cin>>n;//almacenamiento de datos
+s=0;
+for(int i=1;i<=n;i++)//se usa ciclo for para repetirlo
+{
+if(i%2!=0)//diferenciar entre numeros impares de los pares
+{
+s=s+i;//ecuacion
+}
+}
+cout<<"el resultado de la suma es: "<<s;//imprimirelresultadofinal
+return 0;
+}                           
+------------------------------------------------------------------------------------------
+Ejercicio 20
+
+#include<stdio.h>
+#include<cstdlib>
+using namespace std;
+int main()
+{
+printf("sumar los numeros de la serie de fibonacci hasta x numero de la serie\n");
+inta;//almacenamiento de datos
+printf("Introduce un numero:");//instrucciones
+scanf("%d",&a);//almacenamiento de variables 
+int s;//variabledelasuma
+int n=1;
+int an=0;//punto de guardado de la serie anterior
+int aux;//aux para almacenar el dato anterior
+for(int i=0;i<a;i++)
+{
+aux=n;
+n=n+an;//almacenamiento de la suma de digitos 
+an=aux;
+s=n+an;
+}
+printf("el resultado de la suma es: ");
+printf("%d",s);//impresion de resultado
+return 0;
+}          
+-------------------------------------------------------------------------------------------
+Ejercicio 21
+
+#include<iostream>
+#include<math.h>
+usingname space std;
+
+intmain()
+{
+doublex,n,E,fact,p1,p2,result;//definolavariablesquenecesite
+cout<<"Introduzca el numero que quiera: ";
+cin>>n;//almacenamiento de variable
+E=1+x;
+x=1;//definicion de variables
+p1=pow(x,2);
+p2=pow(n,n);//calculo las potencias
+for(x=1;x<=n;x++)//ciclo que se repite n veces
+{
+fact=fact*x;
+}
+result=(p2/2)+(p1/fact);// resultado final
+cout<<"El resultado de la operacion:"<<fin;//resultado
+return 0;
+}                                       
+
+----------------------------------------------------------------------------------------- 
+Ejercicio 22
+
+#include<stdio.h>
+#include<math.h>
+#include<iostream>
+using namespace std;
+
+intmain()
+{
+int n,s;//variables
+cout<<"suma de numeros pares hasta 50: "<<endl;
+s=0;
+for(int i=1;i<=50;i++)//ciclo for para que se haga en bucle 50 veces
+{
+if(i%2==0)//diferenciar entre numeros impares de los pares
+{
+s=s+i;//sumar los numero pares
+}
+}
+cout<<"el resultado de la sumaes: "<<s;//imprimirelresultadofinal
+return 0;
+}                       
+-----------------------------------------------------------------------------------------
+Ejercicio 23
+
+#include<stdio.h>
+#include<math.h>
+#include<iostream>
+using namespace std;
+intmain()
+{
+int n,s;//declara variables
+cout<<"suma de numeros impares hasta 80"<<endl;
+s=0;
+for(int i=1;i<=80;i++)// ciclo for para que el proceso se repita 80 veces
+{
+if(i%2!=0)//diferenciar entre numeros impares de los pares
+{
+s=s+i;//sumar los numeros impares
+cout<<i<<endl;
+}
+}
+cout<<"el resultado de la suma es: "<<s; //imprimir resultado
+return 0;
+}                          
+--------------------------------------------------------------------------------------
+Ejercicio 24
+
+#include<stdio.h>
+#include<math.h>
+#include<iostream>
+using namespace std;
+intmain()
+{
+intn,a=0,b=0,total;//definicion de variables
+cout<<"determinar que n numero es mayor y menor de n numero"<<endl;
+cout<<"ingrese la cantidad de numeros que quiere comparar";//instruccion
+cin>>total;//registrar el dato ingresado
+for(int i=1;i<=total;i++)//for para crear un bucle dependiendo la aleccion del usuario
+{
+cout<<"ingrese el numero: ";
+cin>>n;//registrar el numero para compararlo
+if(n==b)
+{
+a=n;
+b=n;
+}
+else
+{
+if(n>a)
+{
+a=n;
+}
+else
+{
+b=n;
+}
+}
+}
+cout<<"el numero mayor es="<<a<<endl;//imprimirelresultadofinal
+cout<<"el numero menor es="<<b;
+return 0;
+}
+------------------------------------------------------------------------------------------
+Ejercicio 25
+
+#include<stdio.h>
+#include<math.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+int n,limite,mul=0,m=0,i;//definicion de variables
+cout<<"multiplos de x numero hasta cierto numero "<<endl;
+cout<<"ingrese el limite hasta donde se mostraran los multiplos ";//instruccion
+cin>>limite;//registrar el dato ingresado
+cout<<"ingrese el numero del que se mostraran los multiplos";
+cin>>n;
+cout<<"los multiplos del numero son: "<<endl;
+for(int i=1;i<=limite/n;i++)//se crea un bucle
+{
+mul=n*i;//calcular los multiplos
+if(mul==n*i)
+{
+mul=n*i;//calcular los multiplos
+cout<<mul<<endl;//imprimir los multiplos
+m++;
+}
+}
+cout<<"la cantidad demultiplosdelnumero es:"<<m<<endl;//imprimirla
+cantidaddemultiplos
+return 0;
+}
+-----------------------------------------------------------------------------------------
+Ejercicio 26
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int a,b,aux;
+cout<<"intercambiar datos de dos varibles "<<endl;
+cout<<"ingrese un numero en la variable a "<<endl;//intruccion
+cin>>a;//registrar el numero dado por el usuario en una varible
+cout<<"ingrese un numero en la varible b"<<endl;
+cin>>b;
+aux=a;
+a=b;
+b=aux;//intercambiar variable
+cout<<"el nuevo valor de a es: "<<a<<endl;
+cout<<"el nuevo valor de b es: "<<b<<endl;//imprimirresultados
+return 0;
+}
+----------------------------------------------------------------------------------------
+Ejercicio 27
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+float n,h,s,m,d;
+cout<<"convertir de segundos a minutos,horas,dias,semanas"<<endl;
+cout<<"ingrese una cantidad de segundos: ";//indicarlealusuarioquedebehacer
+cin>>n;//almacenado de variables
+m=n/60;
+h=n/3600;
+d=n/86400;
+s=d/7;//calcular la conversion a minutos,dias,semanas
+cout<<"segundos:"<<n<<endl;
+cout<<"minutos:"<<m<<endl;
+cout<<"horas:"<<h<<endl;
+cout<<"dias:"<<d<<endl;
+cout<<"semanas:"<<s<<endl;//impresion de resultados
+return 0;
+}
+-----------------------------------------------------------------------------------   
+Ejercicio 28
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+intmain()
+{
+float n,h,s,m,d;
+cout<<"convertir de segundos a minutos,horas,dias,semanas"<<endl;
+cout<<"ingrese una cantidad de segundos:";//bloque instruccion
+cin>>n;//guardar el dato ingresado en la variable
+m=n/60;
+h=n/3600;
+d=n/86400;
+s=d/7;//calcular la conversion a minutos,dias,semanas
+cout<<"segundos:"<<n<<endl;
+cout<<"minutos:"<<m<<endl;
+cout<<"horas:"<<h<<endl;
+cout<<"dias:"<<d<<endl;
+cout<<"semanas:"<<s<<endl;//imprimirlosresultados
+return 0;
+}
+                               
+-----------------------------------------------------------------------------------------
+Ejercicio 29
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int a;
+cout<<"Introduzca la altura de la figura:";//bloque instruccion
+cin>>a;//Introducir la altura del triangulo
+for(inti=0;i<a;i++)//print
+{
+cout<<"*";
+}
+cout<<""<<endl;
+for(int i=1;i<a-1;i++)//imprimir los asteriscos del borde
+{
+cout<<"*";
+for(int j=0;j<a-i-2;j++)//imprimir los espacios del triangulo
+{
+cout<<"";
+}
+cout<<"*"<<endl;
+}
+cout<<"*"<<endl;//imprimir la ultima linea
+return 0;
+                                                                                                                                                                                                                                   

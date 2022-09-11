@@ -1,0 +1,170 @@
+Ejercicio 1
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int pg,pp,pe; //partidos ganados: pp; partidos empatados: pe; partidos perdidos:pe; puntos totales: pt//
+    cout<<"ingrese cuantos partidos gano: ";
+    cin>>pg;
+    cout<<"ingrese cuantos partidos perdio: ";
+    cin>>pp;
+    cout<<"ingrese cuantos partidos empato: ";
+    cin>>pe;
+    //se multiplica por los puntos que equivale cada ppartido//
+    
+int pgf=(pg*3);
+    cout << "sus partidos ganados son: "<<pg<< " sus puntos son: "<<pgf<< " felicitaciones. ";
+//se multiplica por los puntos que equivale cada partido//
+
+int ppf=(pp*0);
+    cout << "sus partidos perdidos son: "<<pp<< " y sus puntos son: "<<ppf<< " ouchh. ";
+//se multiplica por los puntos que equivale cada partido//
+int pt=pgf+ppf+pe; 
+
+// se define la variable pt para que almacene cada uno de los datos en forma de suma//
+
+    cout << " sus partidos empatados son "<<pe<< " hay cosas por mejorar.";
+    
+    cout << " sus puntos totales son: "<<pt<< endl ;
+
+   return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------
+Ejercicio 2
+
+#include <iostream>
+#include <iomaip>
+
+using namespace std;
+
+int main()
+{
+    int i,it;//i=valor horas de trabajo--it= horas laboradas totales// 
+  cout<< "-----------------";
+   cout<< "Por favor ingrese las horas que laboro: ";
+   cout<< "----------------";
+   cin>> i; 
+    int (it=i*4166);
+   
+    cout<< "----------";
+   cout<< " su pago sera de: " << it << setw(10) " por haber laborado con nosotros. ";
+   cout<< "----------";
+}
+    
+----------------------------------------------------------------------------------------------------------
+Ejercicio 3 
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    float A,B,C,S,Area;
+    cout << "Por favor introduzca los 3 lados de un triangulo para hayar su area";
+        cout << "------------------";
+    cout <<". ingrese Cateto adyacente ";
+    cin>>A;
+        cout << "-------------------";
+    cout<< ". Ingrese Cateto opuesto";
+    cin>> B;
+        cout << "-------------------";
+    cout<< ". Ingrese Hipotenuza ";
+    cin>> C;
+        cout << "-------------------";
+    float (S=A+B+C/2);
+    float sqrt (Area=(S*(S-A)*(S-B)*(S-C)));
+    cout<< "el area del triangulo es: "<<Area<<" y su semiperimetro es: "<<S<<" .";
+    return 0;
+}
+----------------------------------------------------------------------------------------------------------
+Ejercicio 4
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+ int GB,Mb,CD;
+ cout<<"Ingrese la cantidad de Gigabytes para realizar la conversion: ";
+ cin>>  GB;
+ int (Mb=GB*1024);
+ int (CD=Mb/700);
+ cout<<"La cantidad de GB que tiene se pueden contener en: "<<CD<<" Cd's y";
+ cout<<" con una capacidad total en Mg de: "<<Mb<<" Megabytes .";
+ 
+}
+----------------------------------------------------------------------------------------------------------
+Ejercicio 5
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    int A,B;
+ cout<<"Por favor ingrese la edad de los hermanos";
+ cout<<"Primer hermano: ";
+ cin>>A;
+  cout<<"Segundo hermano: ";
+ cin>>B;
+ if (A>B){
+ cout<<"el primer hermano es mayor que el segundo";
+ }
+ else if (A<B){
+ cout<<"el segundo hermano es mayor que el primero";
+ }
+ else if (A==B){
+     cout<<"ambas edades son iguales";
+ }
+ return 0;
+ }
+----------------------------------------------------------------------------------------------------------------
+Ejercicio 6
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+   int A,B,C;
+   cout<<"ingrese las medidas de los lados en el siguiente orden: ";
+   cout<<"Cateto Adyacente: ";
+   cin>>A;
+   cout<<"Cateto Opuesto: ";
+   cin>>B;
+   cout<<"Hipotenuza: ";
+   cin>>C;
+   
+if (A=B && B=C){
+cout<<"el triangulo es un Triángulo equilátero";
+}
+else if (A==B || A==C) || (B==C){
+    cout<<"el triangulo es un Triángulo isósceles";
+}
+else if (A<>B || B<>C || C<>B) {
+cout<<"el triangulo es un Triángulo escaleno";
+}
+
+ return 0;
+ }
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
